@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/* for this design only */
+body {
+    min-height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    background-color: rgb(204, 235, 248);
+}
+/* ######### */
+.grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'd d jo k'
+    'j p p k';
+    gap: 1.1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.testimonial {
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.head {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.head img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.bio h3 {
+    font-size: 15px;
+}
+.daniel_clifford {
+    background-color: #733FC8;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 15%;
+    grid-area: d;
+}
+.daniel_clifford h2 {
+    color: #fff;
+    font-size: 17px;
+    margin: 1rem 0;
+}
+
+.daniel_clifford p {
+    color: lightgray;
+    font-size: 11px;
+    line-height: 1.7;
+    font-weight: bold;
+    margin: 0;
+}
+
+.jonathan_walters {
+    background-color: #49556B;
+    grid-area: jo;
+}
+.jonathan_walters h2 {
+    color: #fff;
+    font-size: 17px;
+    margin: 1rem 0;
+}
+.jonathan_walters p {
+    color: lightgray;
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: bold;
+    margin: 0;
+}
+.kira_whittle {
+    background-color: whitesmoke;
+    grid-area: k;
+}
+.kira_whittle h2 {
+    font-size: 17px;
+    margin: 1rem 0;
+}
+.kira_whittle p {
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin: 0;
+}
+.jeanette_harmon {
+    background-color: linen;
+    grid-area: j;
+}
+.jeanette_harmon h2 {
+    font-size: 18px;
+    margin: 1rem 0;
+}
+.jeanette_harmon p {
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 600;
+    margin: 0;
+}
+.patrick_abrams {
+    background-color: #18202D;
+    grid-area: p;
+}
+.patrick_abrams h2 {
+    font-size: 17px;
+    margin: 1rem 0;
+    color: #fff;
+}
+.patrick_abrams p {
+    color: lightgray;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+/* media  */
+@media (max-width: 768px) {
+    .grid_wrapper {
+        padding: 1rem;
+        grid-template-areas: 
+        "d d d d d"
+        "jo jo jo jo jo"
+        "j j j j j"
+        "p p p p p"
+        "k k k k k";
+    }
+}
