@@ -32,6 +32,7 @@ body {
     gap: 1.1rem;
     max-width: 1100px;
     margin: 0 auto;
+    overflow: hidden;
 }
 .testimonial {
     padding: 1.5rem;
@@ -56,6 +57,19 @@ body {
     background-repeat: no-repeat;
     background-position: top right 15%;
     grid-area: d;
+    position: relative;
+    animation-name: d_animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes d_animate {
+    0% {
+        transform: translateX(-110%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 .daniel_clifford h2 {
     color: #fff;
@@ -74,6 +88,19 @@ body {
 .jonathan_walters {
     background-color: #49556B;
     grid-area: jo;
+    position: relative;
+    animation-name: j_animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes j_animate {
+0% {
+    transform: translateY(-100%);
+}
+100% {
+    transform: translateY(0);
+}
 }
 .jonathan_walters h2 {
     color: #fff;
@@ -90,6 +117,19 @@ body {
 .kira_whittle {
     background-color: whitesmoke;
     grid-area: k;
+    position: relative;
+    animation-name: k_animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes k_animate {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .kira_whittle h2 {
     font-size: 17px;
@@ -104,6 +144,19 @@ body {
 .jeanette_harmon {
     background-color: linen;
     grid-area: j;
+    position: relative;
+    animation-name: je_animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+@keyframes je_animate {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .jeanette_harmon h2 {
     font-size: 18px;
@@ -118,6 +171,20 @@ body {
 .patrick_abrams {
     background-color: #18202D;
     grid-area: p;
+    position: relative;
+    animation-name: p_animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    transform-origin: center;
+}
+@keyframes p_animate {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .patrick_abrams h2 {
     font-size: 17px;
